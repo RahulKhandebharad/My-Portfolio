@@ -8,12 +8,14 @@
       <meta name="keywords" content="portfolio,website,personal website, github, projects, computer science and engineering" />
       <!--Social Media icons--> 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
       <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
       <link rel="icon" type="image/png" href="logo.png">
       <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+       
       <!-- Animate.css -->
       <link rel="stylesheet" href="css/animate.css">
       <!-- Bootstrap  -->
@@ -31,6 +33,127 @@
        <script data-ad-client="ca-pub-4767382980457301" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </head>
    <body>
+<style>
+                                           
+/* Styles the thumbnail */
+
+a.lightbox img {
+height: 300px;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 10px 20px 10px 20px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+ 
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+  
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+  overflow:scroll;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0;
+}
+</style>       
+       
+       
        <canvas id="canvas"></canvas>
       <div id="colorlib-page">
          <div class="container-wrap">
@@ -296,15 +419,46 @@
                      <div class="row">
                         <div class="col-md-12">
                            <div class="timeline-centered">
+                               
+                                <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                 <div class="timeline-entry-inner">
+                                    <div class="timeline-icon color-3">
+                                      <i class="fa fa-building" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="timeline-label" id="itl1">
+                                       <h2><a>LG Soft India</a> <span></span></h2>
+                                        <p align="justify"><strong>LG webOSE Trainee</strong><br>Successfully completed the LG webOS OSE training conducted between 08/09/2021 to 10/12/2021 by LG Soft India at Vellore Institute of Technology. As the final part of training me and my team developed "Cook Buddy" a web app based on LG webOS for LG Smart Refrigerators.</p> <!---br> Cook Buddy is a recipe generator app which smartly analyses the ingredients present in the refrigerator and suggest the users the recipes that can be made from the given ingredients. Cook Buddy also provides the user with My Refrigerator section where the user can add or delete the ingredients that he is missing for making any specific recipe. Cook Buddy also supports search by multiple ingredients name.</p--->
+                                           
+                                           <a class="lightbox" href="#Int1">
+                                            <img src="images/I1.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="Int1">
+                                            <img src="images/I1.jpg"/>
+                                            <a class="lightbox-close" href="#itl1"></a>
+                                        </div>
+                                           
+                                       <p></p>
+                                    </div>
+                                 </div>
+                              </article>
 <!--
 -->                              <article class="timeline-entry animate-box"                                                data-animate-effect="fadeInLeft">
                                  <div class="timeline-entry-inner">
                                     <div class="timeline-icon color-4">
                                        <i class="fa fa-building" aria-hidden="true"></i>
                                     </div>
-                                    <div class="timeline-label">
-                                       <h2><a href="#">IITBombayX</a> <span></span></h2>
-                                       <p align="justify"><strong>Discussion Forum Moderator.</strong><br>This is an honorary job with IITBombayX,My key responsibilities for the job include:<br>1. Addressing the queries from the learners on topics related to the course material, and facilitating the interaction with them on the Discussion Forum.<br>2. Raising queries that require special attention or are interesting to the instructor, and create course related FAQs out of the queries asked by the learners.<br>3. Motivating the participants to interact on the forum.<br></p>
+                                    <div class="timeline-label" id="itl2">
+                                       <h2><a>IITBombayX</a> <span></span></h2>
+                                       <p align="justify"><strong>Discussion Forum Moderator.</strong><br>This is an honorary job with IITBombayX,My key responsibilities for the job include:<br>1. Addressing the queries from the learners on topics related to the course material, and facilitating the interaction with them on the Discussion Forum.<br>2. Raising queries that require special attention or are interesting to the instructor, and create course related FAQs out of the queries asked by the learners.<!--br>3. Motivating the participants to interact on the forum.<br--></p>
+                                        
+                                        <a class="lightbox" href="#Int2">
+                                            <img src="images/I2.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="Int2">
+                                            <img src="images/I2.jpg"/>
+                                            <a class="lightbox-close" href="#itl2"></a>
+                                        </div>
+                
                                        <p></p>
                                     </div>
                                  </div>
@@ -315,9 +469,18 @@
                                     <div class="timeline-icon color-1">
                                        <i class="fa fa-building" aria-hidden="true"></i>
                                     </div>
-                                    <div class="timeline-label">
-                                       <h2><a href="#">JP Morgan Chase & Co</a> <span></span></h2>
-                                       <p align="justify"><strong>Software Engineering and Virtual Experience Intern</strong><br>In this virtual Internship I worked on enhancing my skills with different tools and languages. I learned about version control, exploratory data analysis, data visualization, data cleaning. <br>This also included writing technical reports on the Analysis and presenting meaningfull insights.<br></p>
+                                    <div class="timeline-label" id="itl3">
+                                       <h2><a>JP Morgan Chase & Co</a> <span></span></h2>
+                                       <p align="justify"><strong>Software Engineering and Virtual Experience Intern</strong><br>In this virtual Internship I worked on enhancing my skills with different tools and languages. I learned about version control, exploratory data analysis, data visualization, data cleaning.This also included writing technical reports on the Analysis and presenting meaningfull insights.<br></p>
+                                        
+                                        <a class="lightbox" href="#Int3">
+                                            <img src="images/I3.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="Int3">
+                                            <img src="images/I3.jpg"/>
+                                            <a class="lightbox-close" href="#itl3"></a>
+                                        </div>
+                                        
                                        <p></p>
                                     </div>
                                  </div>
@@ -328,22 +491,19 @@
                                     <div class="timeline-icon color-2">
                                       <i class="fa fa-building" aria-hidden="true"></i>
                                     </div>
-                                    <div class="timeline-label">
-                                       <h2><a href="#">Pojo Software Ltd</a> <span></span></h2>
-                                       <p align="justify"><strong>Subject Matter Expert</strong><br>My key responsiblities included mentoring students and clearing their doubts of core subjects like Physics ,Mathematics and Computer Science.<br>I learned teaching, presentation counselling skills from the internship.</p>
-                                       <p></p>
-                                    </div>
-                                 </div>
-                              </article>
-                               
-                              <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                 <div class="timeline-entry-inner">
-                                    <div class="timeline-icon color-3">
-                                      <i class="fa fa-building" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="timeline-label">
-                                       <h2><a href="#">Expertrons</a> <span></span></h2>
-                                       <p align="justify"><strong>Buissness Development Intern</strong><br>My key responsiblities include knowing the technical and interview preparation requirements of the client, attending new clients and councelling them for interview preparations.<br>I have learned interpersonal communication skills, the buissness struture of the Organisation and some tips and tricks for Iterview Preparation.</p>
+                                    <div class="timeline-label" id="itl4">
+                                       <h2><a>Pojo Software Ltd</a> <span></span></h2>
+                                       <p align="justify"><strong>Subject Matter Expert</strong><br>My key responsiblities included mentoring students and clearing their doubts of core subjects like Physics ,Mathematics and Computer Science.I learned teaching, presentation counselling skills from the internship.
+                                        </p>
+                                        
+                                        <a class="lightbox" href="#Int4">
+                                            <img src="images/I4.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="Int4">
+                                            <img src="images/I4.jpg"/>
+                                            <a class="lightbox-close" href="#itl4"></a>
+                                        </div>
+                                        
                                        <p></p>
                                     </div>
                                  </div>
@@ -442,12 +602,21 @@
                                
                                <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                                  <div class="timeline-entry-inner">
-                                    <div class="timeline-icon color-3">
+                                    <div class="timeline-icon color-2">
                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                     </div>
-                                    <div class="timeline-label">
-                                       <h2>Computer Architecture</h2>
-                                       <p><strong>IIT Madras (NPTEL)</strong><br>Issue Date: July-2020<br>Credential ID: NPTEL20CS25S1592397 <br> <a href="https://drive.google.com/file/d/1YNpFAshQ9895C_RebRdVtaqn4oRA5-r7/view" target="_blank">See Credentials</a></p>
+                                    <div class="timeline-label" id="tl0">
+                                       <h2>Ethical Hacking</h2>
+                                       <p><strong>IIT Kharagpur (NPTEL)</strong><br>Issue Date: Dec-2019<br>Credential ID: NPTEL19CS68S41170105
+                                           </p>
+                                         <a class="lightbox" href="#cert0">
+                                            <img src="images/0.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="cert0">
+                                            <img src="images/0.jpg"/>
+                                            <a class="lightbox-close" href="#tl0"></a>
+                                        </div>
+                                        
                                        <p></p>
                                     </div>
                                  </div>
@@ -455,12 +624,44 @@
                                
                                <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                                  <div class="timeline-entry-inner">
+                                    <div class="timeline-icon color-3">
+                                       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="timeline-label" id="tl2">
+                                       <p><h2>Computer Architecture</h2>
+                                       <p><strong>IIT Madras (NPTEL)</strong><br>Issue Date: July-2020<br>Credential ID: NPTEL20CS25S1592397 <br></p>
+                                            <br>
+                                           
+                                           <a class="lightbox" href="#cert2">
+                                            <img src="images/2.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="cert2">
+                                            <img src="images/2.jpg"/>
+                                            <a class="lightbox-close" href="#tl2"></a>
+                                        </div>
+                                           <!---a href="https://drive.google.com/file/d/1YNpFAshQ9895C_RebRdVtaqn4oRA5-r7/view" target="_blank">See Credentials</a---->
+                                       <p></p>
+                                    </div>
+                                 </div>
+                              </article>
+                               
+                                <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                 <div class="timeline-entry-inner">
                                     <div class="timeline-icon color-5">
                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="tl1">
                                        <h2>Computer Networks and Internet Protocol</h2>
-                                       <p><strong>IIT Kharagpur (NPTEL)</strong><br>Issue Date: June-2020<br>Credential ID: NPTEL20CS23S1128209 <br> <a href="https://drive.google.com/file/d/1qpTCVuM4RjZQ7-SRQ1O6Px2CyuPyHXKQ/view" target="_blank">See Credentials</a></p>
+                                       <p><strong>IIT Kharagpur (NPTEL)</strong><br>Issue Date: June-2020<br>Credential ID: NPTEL20CS23S1128209 <br></p>
+                                        <br>
+                                        <a class="lightbox" href="#cert1">
+                                            <img src="images/1.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="cert1">
+                                            <img src="images/1.jpg"/>
+                                            <a class="lightbox-close" href="#tl1"></a>
+                                        </div>
+                                        <!---a href="https://drive.google.com/file/d/1qpTCVuM4RjZQ7-SRQ1O6Px2CyuPyHXKQ/view" target="_blank">See Credentials</a--->
                                        <p></p>
                                     </div>
                                  </div>
@@ -471,9 +672,19 @@
                                     <div class="timeline-icon color-4">
                                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="tl3">
                                        <h2>College to Corporate Program</h2>
-                                       <p><strong>IITBombayX</strong><br>Issue Date: May-2019<br><a href="https://drive.google.com/file/d/1-KKkWNwbFsSG5PZ_dbCVhd3O4P0eClrC/view" target="_blank">See Credentials</a></p>
+                                       <p><strong>IITBombayX</strong><br>Issue Date: May-2019<br></p>
+                                        <a class="lightbox" href="#cert3">
+                                            <img src="images/3.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="cert3">
+                                            <img src="images/3.jpg"/>
+                                            <a class="lightbox-close" href="#tl3"></a>
+                                        </div>
+                                        
+                                        <!---a href="https://drive.google.com/file/d/1-KKkWNwbFsSG5PZ_dbCVhd3O4P0eClrC/view" target="_blank">See Credentials</a--->
+                                        
                                        <p></p>
                                     </div>
                                  </div>
