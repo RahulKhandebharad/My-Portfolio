@@ -47,6 +47,126 @@
    <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
    <body>
        
+       <style>
+                                           
+/* Styles the thumbnail */
+
+a.lightbox img {
+height: 300px;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 10px 20px 10px 20px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+ 
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+  
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+  overflow:scroll;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0;
+}
+</style>  
+       
        <canvas id="canvas"></canvas>
       <div id="colorlib-page">
          <div class="container-wrap">
@@ -86,6 +206,49 @@
                         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                           <br>
                           <ul class="fa-ul mb-0">
+                              
+                               <!-- </article>
+                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
+                            <li>
+                              <i class="fa-li fa fa-terminal"></i>
+                              <div
+                                onmouseover="document.querySelector('#colorlib-main > section.colorlib-skills > div > div > div:nth-child(3) > article > ul > li:nth-child(3) > div > a > div:nth-child(1)').style.backgroundColor='#78C2AD'"
+                                onmouseout="document.querySelector('#colorlib-main > section.colorlib-skills > div > div > div:nth-child(3) > article > ul > li:nth-child(3) > div > a > div:nth-child(1)').style.backgroundColor=''">
+                                
+                                  <div>
+                                    <h4 class="mb-3" style="font-family: cursive">Automated Covid-19 detection using Image Processing techniques.</h4>
+                                  </div>
+                                  <div
+                                    class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+                                    <div id="divMain">
+                                      <div id='left-div' class="resume-content">
+                                        <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid'
+                                          src=images/Covid19.jpg>
+                                      </div>
+                                      <div id='right-div' class='resume-content'>
+                                        <div class="subheading mb-0">
+                                          <p align="justify">The DNN model is implemented for the automatic detection of various kinds of diseases and abnormalities in different image modalities. Automatic detection of COVID-19 based on DNN models are utilized in this work, along with the four distinct image processing models namely, convolution neural network, VGG-19, Inception, and Xception are applied on publicly available 402 COVID-19 infected and 397 normal images of lung CT-scan images. A total of eight different gradient-based features are also extracted to train thetraditional machine learning models. The Classification metrics of the deep learning model is also juxtaposed with machine learning models. The highest 93.887% and 94.092% training and testing accuracy has been achieved by applying the VGG-19 based deep learning model. The Image Processing models outperform the traditional DNN model. The research proposes a novel approach which is over-fitting independent and show accurate classification of covid-19 infection from normal diseases like Pneumonia using CT-Scan images of lungs.</p>
+                                        </div>
+                                          
+                                          <a href="https://rahulkhandebharad.github.io/Team-8-Capstone-Project/" target="_blank"><strong>Automated Covid-19 Detection Website</strong> </a>
+                                          <br>
+                                          <br>
+                                        <div class="mb-0">
+                                          <span class='badge badge-secondary'>CNN</span>
+                                          <span class='badge badge-secondary'>Image Classification</span>
+                                          <span class='badge badge-secondary'>Python</span>
+                                          <span class='badge badge-secondary'>VGG</span>
+
+                                        </div>
+                                        <br>
+                                       </div>
+                                    </div>
+                                  </div>
+                               
+                              </div>
+                            </li>
+                            <br>
+                              
                             <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
                             <li>
                               <i class="fa-li fa fa-terminal"></i>
@@ -125,43 +288,7 @@
                             <br>
                             <br>
                             <br>
-                            <!-- </article>
-                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
-                            <li>
-                              <i class="fa-li fa fa-terminal"></i>
-                              <div
-                                onmouseover="document.querySelector('#colorlib-main > section.colorlib-skills > div > div > div:nth-child(3) > article > ul > li:nth-child(3) > div > a > div:nth-child(1)').style.backgroundColor='#78C2AD'"
-                                onmouseout="document.querySelector('#colorlib-main > section.colorlib-skills > div > div > div:nth-child(3) > article > ul > li:nth-child(3) > div > a > div:nth-child(1)').style.backgroundColor=''">
-                                <a href="https://github.com/RahulKhandebharad/Automated-Covid-19-detection-using-Image-Processing-techniques." target="_blank" style="text-decoration:none;">
-                                  <div>
-                                    <h4 class="mb-3" style="font-family: cursive">Automated Covid-19 detection using Image Processing techniques.</h4>
-                                  </div>
-                                  <div
-                                    class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
-                                    <div id="divMain">
-                                      <div id='left-div' class="resume-content">
-                                        <img style='float:left; margin:0 20px;' width='300px;' class='img-fluid'
-                                          src=images/Covid19.jpg>
-                                      </div>
-                                      <div id='right-div' class='resume-content'>
-                                        <div class="subheading mb-0">
-                                          <p align="justify">The DNN model is implemented for the automatic detection of various kinds of diseases and abnormalities in different image modalities. Automatic detection of COVID-19 based on DNN models are utilized in this work, along with the four distinct image processing models namely, convolution neural network, VGG-19, Inception, and Xception are applied on publicly available 402 COVID-19 infected and 397 normal images of lung CT-scan images. A total of eight different gradient-based features are also extracted to train thetraditional machine learning models. The Classification metrics of the deep learning model is also juxtaposed with machine learning models. The highest 93.887% and 94.092% training and testing accuracy has been achieved by applying the VGG-19 based deep learning model. The Image Processing models outperform the traditional DNN model. The research proposes a novel approach which is over-fitting independent and show accurate classification of covid-19 infection from normal diseases like Pneumonia using CT-Scan images of lungs.</p>
-                                        </div>
-                                        <div class="mb-0">
-                                          <span class='badge badge-secondary'>CNN</span>
-                                          <span class='badge badge-secondary'>Image Classification</span>
-                                          <span class='badge badge-secondary'>Python</span>
-                                          <span class='badge badge-secondary'>VGG</span>
-
-                                        </div>
-                                        <br>
-                                       </div>
-                                    </div>
-                                  </div>
-                                </a>
-                              </div>
-                            </li>
-                            <br>
+                           
                             <!-- </article>
                               <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
                             <br>
@@ -188,6 +315,52 @@
                    <div class="row">
                       <div class="col-md-12">
                          <div class="timeline-centered">
+                             
+                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                               <div class="timeline-entry-inner">
+                                  <div class="timeline-icon color-5">
+                                     <i class="fa fa-certificate"></i>
+                                  </div>
+                                  <div class="timeline-label" id="mtl1">
+                                     <h2>Certified Associate Analytics Professional (SSC/Q2101)</h2>
+                                      <p><strong>Sector Skill Council (SSC) NASSCOM</strong><br>Issue Date: 3rd July 2021<br></p>
+                                      
+                                      <a class="lightbox" href="#MCert1">
+                                            <img src="images/M1.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="MCert1">
+                                            <img src="images/M1.jpg"/>
+                                            <a class="lightbox-close" href="#mtl1"></a>
+                                        </div>
+                                      
+                                     <p></p>
+                                  </div>
+                               </div>
+                            </article>
+                             
+                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                               <div class="timeline-entry-inner">
+                                  <div class="timeline-icon color-2">
+                                     <i class="fa fa-certificate"></i>
+                                  </div>
+                                  <div class="timeline-label" id="mtl2">
+                                     <h2>Microsoft AI Classroom Series</h2>
+                                     <p><strong>Microsoft</strong><br>Issue Date: March-2021<br></p>
+                                      
+                                      <a class="lightbox" href="#MCert2">
+                                            <img src="images/M2.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="MCert2">
+                                            <img src="images/M2.jpg"/>
+                                            <a class="lightbox-close" href="#mtl2"></a>
+                                        </div>
+                                      
+                                      <!--a href="https://drive.google.com/file/d/1EgukdXt2oFJDCX5n4oidmv0E_q1JoKuF/view?usp=sharing">See Credentials</a--->
+                                     <p></p>
+                                  </div>
+                               </div>
+                            </article>
+                             
                             <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
                                <div class="timeline-entry-inner">
                                   <div class="timeline-icon color-1">
@@ -200,20 +373,6 @@
                                   </div>
                                </div>
                             </article>
-                             
-                            <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-                               <div class="timeline-entry-inner">
-                                  <div class="timeline-icon color-2">
-                                     <i class="fa fa-certificate"></i>
-                                  </div>
-                                  <div class="timeline-label">
-                                     <h2>Microsoft AI Classroom Series</h2>
-                                     <p><strong>Microsoft</strong><br>Issue Date: March-2021<br> <a href="https://drive.google.com/file/d/1EgukdXt2oFJDCX5n4oidmv0E_q1JoKuF/view?usp=sharing">See Credentials</a></p>
-                                     <p></p>
-                                  </div>
-                               </div>
-                            </article>
-
                            
                             <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                               <div class="timeline-entry-inner">
@@ -222,7 +381,7 @@
                                  </div>
                                  <div class="timeline-label">
                                     <h2>Foundational Artificial Intelligence</h2>
-                                    <p><strong>NASSCOM FutureSkills</strong><br>Issue Date: August-2020<br> Credential ID: cc074a2f270b4a368759f7e8abd28333 <br> <a href="https://in.skillup.online/certificates/cc074a2f270b4a368759f7e8abd28333">See Credentials</a></p>
+                                    <p><strong>NASSCOM FutureSkills</strong><br>Issue Date: August-2020<br> Credential ID: cc074a2f270b4a368759f7e8abd28333 <br> <a href="https://in.skillup.online/certificates/cc074a2f270b4a368759f7e8abd28333" target="_blank">See Credentials</a></p>
                                     <p></p>
                                  </div>
                               </div>
