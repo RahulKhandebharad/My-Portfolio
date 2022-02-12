@@ -29,6 +29,127 @@
        <script data-ad-client="ca-pub-4767382980457301" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </head>
    <body>
+       
+<style>
+                                           
+/* Styles the thumbnail */
+
+a.lightbox img {
+height: 300px;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 10px 20px 10px 20px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+ 
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+  
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+  overflow:scroll;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0;
+}
+</style>  
+       
        <canvas id="canvas"></canvas>
       <div id="colorlib-page">
          <div class="container-wrap">
@@ -87,7 +208,7 @@
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
                                           <p align="justify">Swayam OS is our self-made Operating System that has its own Bootloader, GDT, IDT and Device Drivers, It also has a Swayam Calculator which is capable of handling many exceptions. Swayam OS can successfully be booted from bootable Pen drive. It is programmed in X86 Assembly Language. The aim of the project was to understand the practical implementation and working of OS.</p>
-                                             <a href="https://github.com/RahulKhandebharad/Swayam-Operating-System.git"><strong>Swayam OS GitHub Repository</strong></a>
+                                             <a href="https://github.com/RahulKhandebharad/Swayam-Operating-System.git" target="_blank"><strong>Swayam OS GitHub Repository</strong></a>
                                         </div>
                                         <div class="mb-0">
                                           <span class='badge badge-secondary'>x86 Assembly Language</span>
@@ -124,7 +245,7 @@
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
                                           <p align="justify">The Taapamaan Thermometer is made with an Arduino UNO and LM35 sensor. <br>Arduino Programming was used to program the UNO. LM35 sensor measures the temperature. The main aim of the project is to detect the temperature of the surroundings and display it on the LCD. </p>
-                                          <a href="https://github.com/RahulKhandebharad/Taapamaan-Thermometer.git"><strong>Taaapmaan Thermometer's GitHub Repository</strong></a>
+                                          <a href="https://github.com/RahulKhandebharad/Taapamaan-Thermometer.git" target="_blank"><strong>Taaapmaan Thermometer's GitHub Repository</strong></a>
                                         </div>
                                         <div class="mb-0">
                                           <span class='badge badge-secondary'>Arduino</span>
@@ -162,7 +283,7 @@
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
                                           <p align="justify">The VIT Banking Software is a semester project, It is similar to the software used in Banks, It is made primarily using C++ and also has some add-on of SQL to store the data to database. <br>The main aim of the project is to make error free, secure, fast and atomic transactions by maintaining the terms & conditions, and the minimum balance constraints of the Bank.</p>
-                                          <a href="https://github.com/RahulKhandebharad/Banking-Software.git"><strong>VIT Banking Software's GitHub Repository</strong></a>
+                                          <a href="https://github.com/RahulKhandebharad/Banking-Software.git" target="_blank"><strong>VIT Banking Software's GitHub Repository</strong></a>
                                         </div>
                                         <div class="mb-0">
                                           <span class='badge badge-secondary'>C</span>
@@ -198,7 +319,7 @@
                                       <div id='right-div' class='resume-content'>
                                         <div class="subheading mb-0">
                                           <p align="justify">The Edge Detection Robot was made as the final project for a workshop,The Robo was made with Arduino UNO and IR Sensors and some other hardware components.&emsp;&emsp;  I stood first in the competition. <br>The aim of the project was to make a Car which would detect the edge of the table and will take reverse turn by 90 degrees and move in other direction.</p>
-                                          <a href="https://github.com/RahulKhandebharad/Edge-Detection-Robot.git"><strong>Edge Detection Robo's GitHub Repository</strong></a>
+                                          <a href="https://github.com/RahulKhandebharad/Edge-Detection-Robot.git" target="_blank"><strong>Edge Detection Robo's GitHub Repository</strong></a>
                                         </div>
                                         <div class="mb-0">
                                           <span class='badge badge-secondary'>Arduino</span>
@@ -246,9 +367,39 @@
                                     <div class="timeline-icon color-5">
                                        <i class="fa fa-code"></i>
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="ptl1">
                                        <h2>Introduction to Internet of Things</h2>
-                                       <p><strong>Stanford Center for Professional Development</strong><br>Issue Date: 02 January 2021<br>Credential ID : X509271 <br> <a href="https://drive.google.com/file/d/1vJ1mH5ghZnA1iJBVVcSKNN2VtWk_oXl5/view?usp=sharing" target = "_blank">See Credentials</a></p>
+                                       <p><strong>Stanford Center for Professional Development</strong><br>Issue Date: 02 January 2021<br>Credential ID : X509271 <br></p>
+                                        
+                                        <a class="lightbox" href="#PCert1">
+                                            <img src="images/P1.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="PCert1">
+                                            <img src="images/P1.jpg"/>
+                                            <a class="lightbox-close" href="#ptl1"></a>
+                                        </div>
+                                        
+                                        <!---a href="https://drive.google.com/file/d/1vJ1mH5ghZnA1iJBVVcSKNN2VtWk_oXl5/view?usp=sharing" target = "_blank">See Credentials</a--->
+                                       <p></p>
+                                    </div>
+                                 </div>
+                              </article>
+                               
+                               <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                 <div class="timeline-entry-inner">
+                                    <div class="timeline-icon color-5">
+                                       <i class="fa fa-code"></i>
+                                    </div>
+                                    <div class="timeline-label" id="ptl7">
+                                       <h2>Basics of Geocomputation and Geoweb Services</h2>
+                                        <p><strong>Indian Institute of Remote Sensing (IIRS),ISRO, Dehradun</strong><br>Issue Date: 18 December 2020<br>Credential ID :ec5997ee36139e1d4be7f193470da36c <br></p>
+                                         <a class="lightbox" href="#PCert7">
+                                            <img src="images/P7.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="PCert7">
+                                            <img src="images/P7.jpg"/>
+                                            <a class="lightbox-close" href="#ptl7"></a>
+                                        </div>
                                        <p></p>
                                     </div>
                                  </div>
@@ -259,9 +410,19 @@
                                     <div class="timeline-icon color-3">
                                        <i class="fa fa-code"></i>
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="ptl2">
                                        <h2>SQL</h2>
-                                       <p><strong>Stanford Online</strong><br>Issue Date: 1 March 2020 <br> <a href=https://drive.google.com/file/d/19zcBlOaP6FgDHA7YNed-xvcj3OxaI8AC/view target = "_blank">See Credentials</a></p>
+                                       <p><strong>Stanford Online</strong><br>Issue Date: 1 March 2020 <br></p> 
+                                        
+                                        <a class="lightbox" href="#PCert2">
+                                            <img src="images/P2.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="PCert2">
+                                            <img src="images/P2.jpg"/>
+                                            <a class="lightbox-close" href="#ptl2"></a>
+                                        </div>
+                                        
+                                        <!--a href=https://drive.google.com/file/d/19zcBlOaP6FgDHA7YNed-xvcj3OxaI8AC/view target = "_blank">See Credentials</a-->
                                        <p></p>
                                     </div>
                                  </div>
@@ -272,9 +433,19 @@
                                     <div class="timeline-icon color-1">
                                        <i class="fa fa-code"></i>
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="ptl3">
                                        <h2>Programming Essentials in Python</h2>
-                                       <p><strong>Cisco Networking Academy</strong><br>Issue Date: 31 May 2020 <br> <a href=https://drive.google.com/file/d/1E0ZmD2pbTp7uw7FnC0sjea139etV75OV/view target = "_blank">See Credentials</a></p>
+                                       <p><strong>Cisco Networking Academy</strong><br>Issue Date: 31 May 2020 <br></p> 
+                                        
+                                        <a class="lightbox" href="#PCert3">
+                                            <img src="images/P3.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="PCert3">
+                                            <img src="images/P3.jpg"/>
+                                            <a class="lightbox-close" href="#ptl3"></a>
+                                        </div>
+                                        
+                                        <!--a href=https://drive.google.com/file/d/1E0ZmD2pbTp7uw7FnC0sjea139etV75OV/view target = "_blank">See Credentials</a-->
                                        <p></p>
                                     </div>
                                  </div>
@@ -285,9 +456,19 @@
                                     <div class="timeline-icon color-2">
                                        <i class="fa fa-code"></i>
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="ptl4">
                                        <h2>R Programming Track</h2>
-                                       <p><strong>DataCamp</strong><br>Issue Date: May-2020<br>Credential ID: 147629 <br> <a href="https://drive.google.com/file/d/1r0WpeWghka5qV9aUzjUpFVcRe1lWw7eH/view?usp=sharing" target = "_blank">See Credentials</a></p>
+                                       <p><strong>DataCamp</strong><br>Issue Date: May-2020<br>Credential ID: 147629 <br></p> 
+                                        
+                                           <a class="lightbox" href="#PCert4">
+                                            <img src="images/P4.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="PCert4">
+                                            <img src="images/P4.jpg"/>
+                                            <a class="lightbox-close" href="#ptl4"></a>
+                                        </div>
+                                        
+                                        <!--a href="https://drive.google.com/file/d/1r0WpeWghka5qV9aUzjUpFVcRe1lWw7eH/view?usp=sharing" target = "_blank">See Credentials</a-->
                                        <p></p>
                                     </div>
                                  </div>
@@ -298,10 +479,20 @@
                                     <div class="timeline-icon color-3">
                                        <i class="fa fa-code"></i>
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="ptl5">
                                        <h2>Introduction to Computer
                                             Networking</h2>
-                                       <p><strong>Stanford Online</strong><br>Issue Date: 20 March 2020 <br> <a href=https://drive.google.com/file/d/1a4cFPloS7Ur_Qhgi8Y_K8-iHF-E84m7x/view?usp=sharing target = "_blank">See Credentials</a></p>
+                                       <p><strong>Stanford Online</strong><br>Issue Date: 20 March 2020 <br></p>
+                                        
+                                        <a class="lightbox" href="#PCert5">
+                                            <img src="images/P5.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="PCert5">
+                                            <img src="images/P5.jpg"/>
+                                            <a class="lightbox-close" href="#ptl5"></a>
+                                        </div>
+                                        
+                                        <!--a href=https://drive.google.com/file/d/1a4cFPloS7Ur_Qhgi8Y_K8-iHF-E84m7x/view?usp=sharing target = "_blank">See Credentials</a-->
                                        <p></p>
                                     </div>
                                  </div>
@@ -312,25 +503,24 @@
                                     <div class="timeline-icon color-4">
                                       <i class="fa fa-code"></i> 
                                     </div>
-                                    <div class="timeline-label">
+                                    <div class="timeline-label" id="ptl6">
                                        <h2>Java Script</h2>
-                                       <p><strong>Progate</strong><br>Issue Date: 10 May 2020<br> <a href="https://drive.google.com/file/d/1eMHxn0E99WMIBavhGzmV4sGm-cIqcJyX/view?usp=sharing" target = "_blank">See Credentials</a></p>
+                                       <p><strong>Progate</strong><br>Issue Date: 10 May 2020<br></p> 
+                                        
+                                         <a class="lightbox" href="#PCert6">
+                                            <img src="images/P6.jpg"/>
+                                            </a> 
+                                            <div class="lightbox-target" id="PCert6">
+                                            <img src="images/P6.jpg"/>
+                                            <a class="lightbox-close" href="#ptl6"></a>
+                                        </div>
+                                        
+                                        <!--a href="https://drive.google.com/file/d/1eMHxn0E99WMIBavhGzmV4sGm-cIqcJyX/view?usp=sharing" target = "_blank">See Credentials</a-->
                                        <p></p>
                                     </div>
                                  </div>
                               </article>
-                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-                                 <div class="timeline-entry-inner">
-                                    <div class="timeline-icon color-5">
-                                       <i class="fa fa-code"></i>
-                                    </div>
-                                    <div class="timeline-label">
-                                       <h2>R 101</h2>
-                                       <p><strong>IBM</strong><br>Issue Date: 20 April 2020<br>Credential ID :39d725c1256e463aa72ee52b2efa20c6 <br> <a href="https://drive.google.com/file/d/16fJ0jCpR-zwkK6euMvsKvq0x6FdCvOvU/view?usp=sharing" target = "_blank">See Credentials</a></p>
-                                       <p></p>
-                                    </div>
-                                 </div>
-                              </article>
+                              
                                
                               <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
                                  <div class="timeline-entry-inner">
